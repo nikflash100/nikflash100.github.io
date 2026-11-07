@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nik's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Nik</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#honors">Honors</a>
+    <a href="#goals">Goals</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="welcome">
+  <h2>Welcome</h2>
+  <p>Hi, I'm Nik. I'm a middle schooler who codes in Python and builds apps, mostly for studying and school stuff. This site has some of my projects and what I'm working on.</p>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I got into coding through Python and then started using it for machine learning. Most of my projects come from problems I actually had, like wanting a better way to practice quizbowl. Outside of coding I do quizbowl, chess, MathCounts, Destination Imagination, taekwondo (black belt), and Scouts.</p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li><strong>Python</strong> - my main language. Certified PCEP, PCAP, and PCAD through the Python Institute.</li>
+    <li><strong>pandas, matplotlib, seaborn</strong> - for cleaning and graphing data</li>
+    <li><strong>scikit-learn</strong> - logistic regression, K-Means clustering</li>
+    <li><strong>HTML, CSS, JavaScript</strong> - for web apps like Buzzer Station</li>
+    <li><strong>Git, GitHub, VS Code</strong> - still learning the full workflow</li>
+    <li><strong>OpenAI API, Thunkable</strong> - used for Signal</li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <h3>Buzzer Station</h3>
+    <p>A quizbowl practice app that reads questions word by word so you can buzz in with the spacebar, like a real match. I made it because I wanted to practice on my own.</p>
+    <p><strong>Built with:</strong> HTML, JavaScript</p>
+    <p><strong>What I did:</strong> Wrote a parser that pulled 3,531 questions (1,885 tossups and 1,646 bonuses) out of public packet archives. Added power markers, auto-grading, scoring by category, and a mode to redo questions I missed. The parsing was the hardest part because the packets are formatted inconsistently.</p>
+    <p><a href="https://github.com/nikflash100/buzzer-station">Buzzer Station on GitHub</a></p>
+  </div>
+
+  <div class="project">
+    <h3>From Failure to Flourishing</h3>
+    <p>A data analysis project looking at what affects whether students fail, using a dataset of student info.</p>
+    <p><strong>Built with:</strong> Python, pandas, matplotlib, seaborn</p>
+    <p><strong>What I did:</strong> Cleaned the data and made graphs comparing failure rates against absences, study time, parental support, and other factors. I learned how to pick the right type of chart for each comparison.</p>
+    <p><a href="https://github.com/nikflash100/Projects">Project files on GitHub</a></p>
+  </div>
+
+  <div class="project">
+    <h3>SuccessForecast</h3>
+    <p>A machine learning model that predicts whether a student will pass or fail.</p>
+    <p><strong>Built with:</strong> Python, scikit-learn</p>
+    <p><strong>What I did:</strong> Trained a logistic regression model that got 85.6% accuracy and 0.92 ROC-AUC. Also used K-Means clustering to group students into types based on performance. Presented it at demo day.</p>
+    <p class="note">Code isn't public yet.</p>
+  </div>
+
+  <div class="project">
+    <h3>Signal</h3>
+    <p>A diagnostic app for K-12 students that figures out which topic they're weakest in.</p>
+    <p><strong>Built with:</strong> Thunkable, OpenAI API (gpt-4o-mini)</p>
+    <p><strong>What I did:</strong> Designed a 16-question screening quiz that narrows down to the weak topic, with a backup question bank so it still works offline. Presented it at the Spark Civics Civic Innovation Showcase.</p>
+    <p class="note">Built in Thunkable, so there's no code repo.</p>
+  </div>
+</section>
+
+<section id="honors">
+  <h2>Honors</h2>
+  <ul>
+    <li>Destination Imagination - Minnesota state champion, 2026 (built the team's electronics and timer)</li>
+    <li>Quizbowl - NAQT Middle School Nationals qualifier, 2025</li>
+    <li>Chess - 2nd in age group at Minnesota state championship</li>
+  </ul>
+</section>
+
+<section id="goals">
+  <h2>Goals</h2>
+  <p>Next I want to learn how to deploy ML models so other people can actually use them, not just run them in a notebook. I also want to keep making study tools that help students figure out what they don't understand yet.</p>
+</section>
+
+</main>
+
+<footer>
+  <p><a href="https://github.com/nikflash100">My GitHub</a></p>
+</footer>
+
+</body>
+</html>
