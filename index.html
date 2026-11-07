@@ -4,100 +4,138 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nik's Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>Nik</h1>
+<header class="top">
+  <a class="name" href="#welcome">Nik</a>
   <nav>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
-    <a href="#honors">Honors</a>
     <a href="#goals">Goals</a>
   </nav>
 </header>
 
 <main>
 
-<section id="welcome">
-  <h2>Welcome</h2>
-  <p>Hi, I'm Nik. I'm a middle schooler who codes in Python and builds apps, mostly for studying and school stuff. This site has some of my projects and what I'm working on.</p>
+<section id="welcome" class="tossup">
+  <p class="round">Tossup 1</p>
+  <p id="question" class="question">This middle schooler from Minnesota writes most of his code in Python and holds three Python Institute certifications. He built a quizbowl practice app that reads questions word by word, (*) then made a Science Bowl version of it. For ten points, name this developer whose portfolio you're reading.</p>
+  <div class="buzz-row">
+    <button id="buzz" class="buzz">Buzz</button>
+    <span class="hint">or press space</span>
+  </div>
+  <p id="answer" class="answer" hidden>ANSWER: <strong>Nik</strong>. Welcome to my site. Scroll down to see what I've been building.</p>
 </section>
 
 <section id="about">
-  <h2>About Me</h2>
-  <p>I got into coding through Python and then started using it for machine learning. Most of my projects come from problems I actually had, like wanting a better way to practice quizbowl. Outside of coding I do quizbowl, chess, MathCounts, Destination Imagination, taekwondo (black belt), and Scouts.</p>
+  <h2>About me</h2>
+  <p>I'm a middle schooler who codes, mostly in Python. A lot of my projects start because I want a better way to study for something. I compete in quizbowl (NAQT Middle School Nationals qualifier, 2025), Science Bowl, chess, MathCounts, and Destination Imagination, where our team won state in 2026. I also have a black belt in taekwondo and I'm in Scouts.</p>
 </section>
 
 <section id="skills">
-  <h2>Skills</h2>
-  <ul>
-    <li><strong>Python</strong> - my main language. Certified PCEP, PCAP, and PCAD through the Python Institute.</li>
-    <li><strong>pandas, matplotlib, seaborn</strong> - for cleaning and graphing data</li>
-    <li><strong>scikit-learn</strong> - logistic regression, K-Means clustering</li>
-    <li><strong>HTML, CSS, JavaScript</strong> - for web apps like Buzzer Station</li>
-    <li><strong>Git, GitHub, VS Code</strong> - still learning the full workflow</li>
-    <li><strong>OpenAI API, Thunkable</strong> - used for Signal</li>
-  </ul>
+  <h2>What I use</h2>
+  <dl class="skills">
+    <dt>Python</dt>
+    <dd>My main language. PCEP, PCAP, and PCAD certified.</dd>
+    <dt>pandas, matplotlib, seaborn</dt>
+    <dd>Cleaning data and making charts.</dd>
+    <dt>scikit-learn</dt>
+    <dd>Logistic regression and K-Means clustering.</dd>
+    <dt>HTML, CSS, JavaScript</dt>
+    <dd>What Buzzer Station and SB Station are built with.</dd>
+    <dt>Git, GitHub, VS Code</dt>
+    <dd>Still getting used to the full workflow.</dd>
+  </dl>
 </section>
 
 <section id="projects">
   <h2>Projects</h2>
 
-  <div class="project">
+  <article class="project">
     <h3>Buzzer Station</h3>
-    <p>A quizbowl practice app that reads questions word by word so you can buzz in with the spacebar, like a real match. I made it because I wanted to practice on my own.</p>
-    <p><strong>Built with:</strong> HTML, JavaScript</p>
-    <p><strong>What I did:</strong> Wrote a parser that pulled 3,531 questions (1,885 tossups and 1,646 bonuses) out of public packet archives. Added power markers, auto-grading, scoring by category, and a mode to redo questions I missed. The parsing was the hardest part because the packets are formatted inconsistently.</p>
-    <p><a href="https://github.com/nikflash100/buzzer-station">Buzzer Station on GitHub</a></p>
-  </div>
+    <p class="what">Quizbowl practice that feels like a real match.</p>
+    <p>I wanted to practice tossups by myself, so I built an app that reads questions out word by word and lets you buzz with the spacebar. It has power markers, auto-grading, scoring by category, recap graphs, and a mode that drills only the questions you missed.</p>
+    <p>The hardest part was the parser. I pulled 1,885 tossups and 1,646 bonuses from public middle school packets, and every packet is formatted a little differently.</p>
+    <p class="built">HTML, CSS, JavaScript</p>
+    <a class="link" href="https://github.com/nikflash100/buzzer-station">See the code on GitHub</a>
+  </article>
 
-  <div class="project">
+  <article class="project">
+    <h3>SB Station</h3>
+    <p class="what">The same idea, for Science Bowl.</p>
+    <p>After Buzzer Station worked, I made a version for Science Bowl. You pick which subjects you want and it only uses middle school level questions, so practice matches what actually shows up at competitions.</p>
+    <p class="built">HTML, CSS, JavaScript</p>
+    <p class="note">Runs in a Codecademy workspace, not on GitHub yet.</p>
+  </article>
+
+  <article class="project">
     <h3>From Failure to Flourishing</h3>
-    <p>A data analysis project looking at what affects whether students fail, using a dataset of student info.</p>
-    <p><strong>Built with:</strong> Python, pandas, matplotlib, seaborn</p>
-    <p><strong>What I did:</strong> Cleaned the data and made graphs comparing failure rates against absences, study time, parental support, and other factors. I learned how to pick the right type of chart for each comparison.</p>
-    <p><a href="https://github.com/nikflash100/Projects">Project files on GitHub</a></p>
-  </div>
-
-  <div class="project">
-    <h3>SuccessForecast</h3>
-    <p>A machine learning model that predicts whether a student will pass or fail.</p>
-    <p><strong>Built with:</strong> Python, scikit-learn</p>
-    <p><strong>What I did:</strong> Trained a logistic regression model that got 85.6% accuracy and 0.92 ROC-AUC. Also used K-Means clustering to group students into types based on performance. Presented it at demo day.</p>
-    <p class="note">Code isn't public yet.</p>
-  </div>
-
-  <div class="project">
-    <h3>Signal</h3>
-    <p>A diagnostic app for K-12 students that figures out which topic they're weakest in.</p>
-    <p><strong>Built with:</strong> Thunkable, OpenAI API (gpt-4o-mini)</p>
-    <p><strong>What I did:</strong> Designed a 16-question screening quiz that narrows down to the weak topic, with a backup question bank so it still works offline. Presented it at the Spark Civics Civic Innovation Showcase.</p>
-    <p class="note">Built in Thunkable, so there's no code repo.</p>
-  </div>
-</section>
-
-<section id="honors">
-  <h2>Honors</h2>
-  <ul>
-    <li>Destination Imagination - Minnesota state champion, 2026 (built the team's electronics and timer)</li>
-    <li>Quizbowl - NAQT Middle School Nationals qualifier, 2025</li>
-    <li>Chess - 2nd in age group at Minnesota state championship</li>
-  </ul>
+    <p class="what">What actually makes students fail?</p>
+    <p>A data analysis of a student dataset in Python. I compared failure rates against absences, study time, parental support, and other factors, and learned how to pick the right kind of chart for each comparison.</p>
+    <p class="built">Python, pandas, matplotlib, seaborn</p>
+    <a class="link" href="https://github.com/nikflash100/Projects">See the notebook on GitHub</a>
+  </article>
 </section>
 
 <section id="goals">
-  <h2>Goals</h2>
-  <p>Next I want to learn how to deploy ML models so other people can actually use them, not just run them in a notebook. I also want to keep making study tools that help students figure out what they don't understand yet.</p>
+  <h2>What's next</h2>
+  <p>I want to finish putting SB Station on GitHub, and learn how to deploy machine learning models so people can actually use them instead of them sitting in a notebook. Mostly I want to keep building study tools that help other students practice smarter.</p>
 </section>
 
 </main>
 
 <footer>
-  <p><a href="https://github.com/nikflash100">My GitHub</a></p>
+  <a href="https://github.com/nikflash100">My GitHub profile</a>
 </footer>
+
+<script>
+const q = document.getElementById("question");
+const btn = document.getElementById("buzz");
+const ans = document.getElementById("answer");
+const words = q.textContent.split(" ");
+const still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+let i = 0;
+let timer;
+
+q.innerHTML = words.map(w => w === "(*)" ? '<span class="power">(*)</span>' : "<span>" + w + "</span>").join(" ");
+const spans = q.querySelectorAll("span");
+
+function show(n) {
+  for (let k = 0; k < n; k++) spans[k].classList.add("on");
+}
+
+function buzz() {
+  clearInterval(timer);
+  show(spans.length);
+  ans.hidden = false;
+  btn.disabled = true;
+  btn.textContent = i <= words.indexOf("(*)") ? "Power! +15" : "+10";
+}
+
+if (still) {
+  show(spans.length);
+} else {
+  timer = setInterval(() => {
+    spans[i].classList.add("on");
+    i++;
+    if (i >= spans.length) clearInterval(timer);
+  }, 140);
+}
+
+btn.addEventListener("click", buzz);
+document.addEventListener("keydown", e => {
+  if (e.code === "Space" && !btn.disabled && e.target === document.body) {
+    e.preventDefault();
+    buzz();
+  }
+});
+</script>
 
 </body>
 </html>
