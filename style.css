@@ -1,76 +1,233 @@
+:root {
+  --bg: #161a22;
+  --raised: #1f2533;
+  --text: #ebe8e0;
+  --dim: #a3a9b6;
+  --amber: #f2b134;
+  --link: #8ab4ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #121212;
-  color: #e0e0e0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 17px;
-  line-height: 1.6;
   margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Atkinson Hyperlegible", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.65;
 }
 
-header {
-  background-color: #1e1e1e;
-  padding: 15px 30px;
-  border-bottom: 2px solid #4a90d9;
-}
-
-header h1 {
-  margin: 0 0 8px 0;
-}
-
-nav a {
-  color: #e0e0e0;
-  margin-right: 15px;
+h1, h2, h3, .name {
+  font-family: "Bricolage Grotesque", Arial, sans-serif;
+  line-height: 1.15;
 }
 
 a {
-  color: #6cb4ff;
+  color: var(--link);
+}
+
+a:focus-visible, button:focus-visible {
+  outline: 3px solid var(--amber);
+  outline-offset: 3px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 28px 20px 0;
+}
+
+.name {
+  color: var(--text);
+  font-size: 26px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.top nav a {
+  color: var(--dim);
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.top nav a:hover {
+  color: var(--text);
 }
 
 main {
-  max-width: 800px;
+  max-width: 760px;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 0 20px;
 }
 
 section {
-  margin-bottom: 40px;
+  padding: 56px 0;
 }
 
 h2 {
-  border-bottom: 1px solid #444;
-  padding-bottom: 5px;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+
+.tossup {
+  padding: 72px 0 64px;
+}
+
+.round {
+  color: var(--amber);
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.question {
+  font-size: 26px;
+  line-height: 1.5;
+  margin: 0 0 32px;
+}
+
+.question span {
+  opacity: 0.12;
+  transition: opacity 0.15s;
+}
+
+.question span.on {
+  opacity: 1;
+}
+
+.question .power.on {
+  color: var(--amber);
+  font-weight: 700;
+}
+
+.buzz-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.buzz {
+  background: var(--amber);
+  color: #1b1405;
+  border: none;
+  border-bottom: 5px solid #b07c14;
+  border-radius: 14px;
+  padding: 14px 34px;
+  font-family: "Bricolage Grotesque", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.buzz:active {
+  border-bottom-width: 1px;
+  transform: translateY(4px);
+}
+
+.buzz:disabled {
+  cursor: default;
+}
+
+.hint {
+  color: var(--dim);
+  font-size: 15px;
+}
+
+.answer {
+  margin: 28px 0 0;
+  padding: 16px 20px;
+  background: var(--raised);
+  border-left: 4px solid var(--amber);
+  border-radius: 4px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 14px 24px;
+  margin: 0;
+}
+
+.skills dt {
+  font-weight: 700;
+}
+
+.skills dd {
+  margin: 0;
+  color: var(--dim);
 }
 
 .project {
-  background-color: #1e1e1e;
-  border: 1px solid #333;
-  border-radius: 6px;
-  padding: 5px 20px;
-  margin-bottom: 20px;
+  margin-bottom: 48px;
+}
+
+.project h3 {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.what {
+  font-style: italic;
+  color: var(--amber);
+  margin: 4px 0 14px;
+}
+
+.built {
+  color: var(--dim);
+  font-size: 15px;
 }
 
 .note {
-  color: #999;
+  color: var(--dim);
+  font-size: 15px;
   font-style: italic;
 }
 
+.link {
+  font-weight: 700;
+}
+
 footer {
-  text-align: center;
-  padding: 20px;
-  border-top: 1px solid #333;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 20px 56px;
+  border-top: 1px solid var(--raised);
 }
 
 @media (max-width: 600px) {
-  header {
-    padding: 15px;
+  body {
+    font-size: 17px;
   }
 
-  nav a {
-    display: inline-block;
-    margin-bottom: 5px;
+  .top nav a {
+    margin: 0 16px 0 0;
   }
 
-  main {
-    padding: 10px 15px;
+  .question {
+    font-size: 21px;
+  }
+
+  .skills {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .skills dd {
+    margin-bottom: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .question span {
+    transition: none;
   }
 }
