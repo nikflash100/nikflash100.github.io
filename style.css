@@ -173,6 +173,11 @@ h2 {
   font-size: 28px;
   font-weight: 800;
   margin: 0;
+  transition: color 0.15s;
+}
+
+.project h3:hover {
+  color: var(--amber);
 }
 
 .what {
