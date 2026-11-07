@@ -10,12 +10,12 @@
 
 ## Testing
 
-- [ ] Live URL opens in a private/incognito window without signing in
-- [ ] All required sections are there with my own content
-- [ ] Navigation, GitHub profile, and project links work
-- [ ] Readable on desktop and at phone width
-- [ ] No images used, so no alt text needed
-- [ ] Latest change shows up on the published site
-- [ ] No private info on the site, repo, or screenshots
+- [x] Live URL opens in a private/incognito window without signing in
+- [x] All required sections are there with my own content
+- [x] Navigation, GitHub profile, and project links work
+- [x] Readable on desktop and at phone width
+- [x] No images used, so no alt text needed
+- [x] No private info on the site, repo, or screenshots
+- [x] Latest change shows up on the published site
 
 ## Reflection
