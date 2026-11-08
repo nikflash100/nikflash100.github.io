@@ -19,3 +19,11 @@
 - [x] Latest change shows up on the published site
 
 ## Reflection
+
+GitHub stored my code and kept track of every change I made, and GitHub Pages is what turned that repo into an actual website at nikflash100.github.io. VS Code made it easy to edit the files and commit and sync them without leaving the editor. Copilot helped by changing the code exactly how I asked, like adding the amber hover on the project titles, and it also explained code and tested the site at phone sizes for me.
+
+The hardest part was making the tossup at the top of the site. I had to figure out how to write it like a real quizbowl question and get it to read out word by word.
+
+One piece of code I can explain is the buzz button. It splits the question into words and shows one every 140 milliseconds. When you buzz, it checks if you buzzed before or after the (*). Before gives +15 for a power and after gives +10.
+
+Next time I want to add more tossups to the site so you can play through a few about my different projects.
