@@ -14,7 +14,7 @@
 - [x] All required sections are there with my own content
 - [x] Navigation, GitHub profile, and project links work
 - [x] Readable on desktop and at phone width
-- [x] No images used, so no alt text needed
+- [x] Photo loads and has alt text
 - [x] No private info on the site, repo, or screenshots
 - [x] Latest change shows up on the published site
 
